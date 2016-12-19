@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="MenuApp">
+  <head>
+    <meta name="description" content="Module 4 Coding Assignment">
+    <meta name="author" content="Volha Shokut">
+    <title>Menu App</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+      <div class="container">
+        <a class="navbar-brand" href="#">Menu App</a>
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-12">
+          <div class="jumbotron">
+            <h1>Welcome to our Restaurant</h1>
+            <p>Volha Shokut. Module 4 Coding Assignment.</p>
+          </div>
+          <div class="row">
+            <ui-view></ui-view>
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Volha Shokut 2016</p>
+      </footer>
+
+    </div><!--/.container-->
+
+    <!-- Libraries -->
+    <script src="./lib/bootstrap.min.js"></script>
+    <script src="./lib/angular.min.js"></script>
+    <script src="./lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="./src/menuapp.module.js"></script>
+    <script src="./src/data.module.js"></script>
+    <script src="./src/menudata.service.js"></script>
+    <script src="./src/categories.component.js"></script>
+    <script src="./src/items.component.js"></script>
+    <script src="./src/main-categories.controller.js"></script>
+    <script src="./src/category-items.controller.js"></script>
+    <script src="./src/routes.js"></script>
+  </body>
+</html>
