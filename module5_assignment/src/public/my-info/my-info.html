@@ -1,0 +1,24 @@
+<div class="container" ng-if="myInfoCtrl.data">
+  <h2 class="text-center">Registered inforamtion</h2>
+
+  <div class="col-md-6">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-danger">First name: {{ myInfoCtrl.data.firstName }}</li>
+      <li class="list-group-item list-group-item-danger">Last name: {{ myInfoCtrl.data.lastName }}</li>
+      <li class="list-group-item list-group-item-danger">Email: {{ myInfoCtrl.data.email }}</li>
+      <li class="list-group-item list-group-item-danger">Phone number: {{ myInfoCtrl.data.phoneNumber }}</li>
+      <li class="list-group-item list-group-item-danger">Menu number: {{ myInfoCtrl.data.menuNumber }}</li>
+    </ul>
+  </div>
+
+  <menu-item menu-item="myInfoCtrl.menuItem">
+  </menu-item>
+
+</div>
+
+<div class="container" ng-if="!myInfoCtrl.data">
+  <h2 class="text-center">Not Signed Up Yet.</h2>
+  <div class="text-center">
+    <a ui-sref="public.signUp">Sign up Now!</a>
+  </div>
+</div>
